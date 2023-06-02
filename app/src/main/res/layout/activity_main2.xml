@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="58dp"
+        android:text="First Number:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="129dp"
+        android:text="Second Number:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/value3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:text="Summation Result:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_value3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/value1"
+        app:layout_constraintEnd_toEndOf="@+id/text_value2"
+        app:layout_constraintStart_toStartOf="@+id/text_value2" />
+
+    <TextView
+        android:id="@+id/text_value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:text="value2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/value2"
+        app:layout_constraintStart_toEndOf="@+id/value2" />
+
+    <TextView
+        android:id="@+id/text_value3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="54dp"
+        android:text="value3"
+        app:layout_constraintStart_toEndOf="@+id/value3"
+        app:layout_constraintTop_toBottomOf="@+id/text_value2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
